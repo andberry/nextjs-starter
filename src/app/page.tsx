@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -12,9 +12,11 @@ export default function Home() {
           priority
         />
         <div>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim dolore, architecto optio repellat recusandae exercitationem ratione libero temporibus ducimus fugit non, blanditiis illum hic, placeat cupiditate laudantium voluptatum deserunt eos.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim dolore,
+          architecto optio repellat recusandae exercitationem ratione libero
+          temporibus ducimus fugit non, blanditiis illum hic, placeat cupiditate
+          laudantium voluptatum deserunt eos.
         </div>
-        
       </main>
     </div>
   );
