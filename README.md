@@ -15,9 +15,8 @@ This is a Next.js Starter Project, based on the following technologies:
 ### Requirements
 
 `node` version >= 24
-.nvmrc file is provided
 
-If you have `nvm` installed, it will automatically switch (or ask to install) the right node version when changing to the project folder with your terminal.
+`.nvmrc` file is provided: if you have `nvm` installed, it will automatically switch (or ask to install) the right node version when changing to the project folder with your terminal.
 
 ### Install
 
