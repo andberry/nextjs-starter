@@ -1,4 +1,4 @@
-import { Container } from '@components/helpers/Container/Container';
+import { Container } from '@components/helpers/Container';
 export const Header = () => {
   return (
     <header className="font-urbanist text-secondary bg-black py-4 text-lg font-normal tracking-wider uppercase">
