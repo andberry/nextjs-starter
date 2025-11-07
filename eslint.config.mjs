@@ -18,6 +18,14 @@ const eslintConfig = defineConfig([
       curly: ['warn', 'all'],
       'arrow-body-style': ['warn', 'as-needed'],
       'no-unused-vars': 'error',
+      'no-restricted-imports': [
+        'error',
+        {
+          name: 'next/link',
+          message:
+            'Please use the Link component found in the ui/components/helpers folder',
+        },
+      ],
     },
   },
 
