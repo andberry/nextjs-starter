@@ -75,7 +75,7 @@ export const Button = React.forwardRef<
   ) => {
     const buttonClasses = classNames(
       'inline-flex relative group items-center justify-center',
-      'px-7 py-5',
+      'p-4',
       'uppercase leading-none font-sans text-base font-semibold',
       'transition-all duration-100 ease-linear',
       {
