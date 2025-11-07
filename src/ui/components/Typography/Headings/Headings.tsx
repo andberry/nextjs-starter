@@ -6,7 +6,8 @@ interface IProps {
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'div';
 }
 
-const headingsCommonClasses = 'text-balance font-sans font-bold mb-4';
+const headingsCommonClasses =
+  'text-balance font-sans font-black mb-4 uppercase';
 
 export const H1 = ({
   children,
