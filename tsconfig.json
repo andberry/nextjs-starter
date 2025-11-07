@@ -20,17 +20,16 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-
-      "@ui/*": ["./src/ui/*"],
       "@components/*": ["./src/ui/components/*"],
       "@hooks/*": ["./src/ui/hooks/*"],
+      "@ui/*": ["./src/ui/*"],
       "@data-access/*": ["./src/lib/data/access/*"],
       "@data-transformers/*": ["./src/lib/data/transformers/*"],
       "@data-types/*": ["./src/lib/data/types/*"],
-      
+
       "@utils/*": ["./src/lib/utils/*"],
       "@config/*": ["./src/lib/config/*"],
-      "@assets/*": ["./src/assets/*"],
+      "@assets/*": ["./src/assets/*"]
     }
   },
   "include": [
