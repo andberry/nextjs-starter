@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Header } from '@components/Header/Header';
 import { Footer } from '@components/Footer/Footer';
+import { Gtm } from '@components/misc/GTM';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -15,11 +16,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Gtm />
       <body
         className={
           'font-newsreader selection:bg-secondary bg-white text-2xl text-black antialiased'
         }
       >
+        {process.env.NODE_ENV === 'production' &&
+          process.env.NEXT_PUBLIC_GTM && (
+            <noscript>
+              <iframe
+                src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM}`}
+                height="0"
+                width="0"
+                style={{ display: 'none', visibility: 'hidden' }}
+              />
+            </noscript>
+          )}
         <Header />
         {children}
         <Footer />
