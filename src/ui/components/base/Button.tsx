@@ -3,7 +3,7 @@ import { Link } from '@ui/components/helpers/Link';
 import { Loader } from 'lucide-react';
 import React, { ComponentPropsWithRef } from 'react';
 
-export type IButtonVariant = 'primary' | 'secondary' | 'outline';
+export type IButtonVariant = 'primary' | 'black' | 'outline';
 export interface IButton {
   /**
    * Button's label
@@ -77,17 +77,17 @@ export const Button = React.forwardRef<
       'inline-flex relative group items-center justify-center',
       'p-4',
       'uppercase leading-none font-sans text-base font-semibold',
-      'transition-all duration-100 ease-linear',
+      'transition-all duration-150 ease-linear',
       {
-        'border border-primary text-white bg-primary hover:bg-black hover:border-black':
+        'border border-primary text-black bg-primary hover:bg-black hover:border-black hover:text-primary':
           variant === 'primary',
       },
       {
-        'border border-secondary text-black bg-secondary hover:bg-black hover:text-white hover:border-black':
-          variant === 'secondary',
+        'border border-black text-white bg-black hover:text-primary':
+          variant === 'black',
       },
       {
-        'border border-black bg-white hover:bg-black hover:text-white':
+        'border border-black bg-white hover:bg-primary hover:border-primary hover:text-black':
           variant === 'outline',
       },
 

@@ -16,8 +16,8 @@
   /* Colors: resetting and adding only custom ones */
   --color-*: initial;
   --color-black: #000807;
+  --color-gray: #dddddd;
   --color-white: #ffffff;
-  --color-green: #3aa699;
   --color-pear: #dbea60;
 
   /* Typography: extending */
@@ -38,8 +38,7 @@
   https://tailwindcss.com/docs/theme#referencing-other-variables
 */
 @theme inline {
-  --color-primary: var(--color-green);
-  --color-secondary: var(--color-pear);
+  --color-primary: var(--color-pear);
 
   --font-serif: var(--font-newsreader);
   --font-sans: var(--font-urbanist);

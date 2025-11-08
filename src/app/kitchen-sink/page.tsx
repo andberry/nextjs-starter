@@ -23,9 +23,6 @@ const Page = () => {
             <div className="bg-primary flex aspect-square items-center justify-center text-sm uppercase">
               Primary
             </div>
-            <div className="bg-secondary flex aspect-square items-center justify-center text-sm uppercase">
-              Secondary
-            </div>
           </div>
         </Container>
       </section>
@@ -155,18 +152,7 @@ const Page = () => {
         <H2>Base</H2>
         <H3>Anchor</H3>
         <Container size="lg">
-          <Anchor
-            href="https://www.spotagency.ch/"
-            variant="dark"
-          >
-            Dark Anchor
-          </Anchor>
-          <Anchor
-            href="https://www.spotagency.ch/"
-            variant="light"
-          >
-            Light Anchor
-          </Anchor>
+          <Anchor href="https://www.spotagency.ch/">Anchor</Anchor>
         </Container>
         <H3>Buttons</H3>
         <Container size="lg">
@@ -178,8 +164,8 @@ const Page = () => {
             />
             <Button
               href="https://www.spotagency.ch/"
-              label="Secondary Button"
-              variant="secondary"
+              label="Black Button"
+              variant="black"
             />
             <Button
               href="https://www.spotagency.ch/"
