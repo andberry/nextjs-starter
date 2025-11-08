@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { Link } from '@ui/components/helpers/Link';
-import { Loader } from 'lucide-react';
+import { PiSpinnerGap } from 'react-icons/pi';
 import React, { ComponentPropsWithRef } from 'react';
 
 export type IButtonVariant = 'primary' | 'black' | 'outline';
@@ -131,14 +131,8 @@ export const Button = React.forwardRef<
             ref={forwardedRef as React.ForwardedRef<HTMLButtonElement>}
             tabIndex={tabIndex}
           >
-            <span className="relative flex justify-center gap-4">
-              {label}{' '}
-              {isLoading && (
-                <Loader
-                  className={'animate-spin'}
-                  size={'1em'}
-                />
-              )}
+            <span className="relative flex items-center justify-center gap-4">
+              {label} {isLoading && <PiSpinnerGap className="animate-spin" />}
             </span>
           </button>
         )}

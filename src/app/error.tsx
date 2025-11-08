@@ -4,7 +4,7 @@ import { Button } from '@/ui/components/base/Button';
 import { Copy } from '@/ui/components/Typography/Copy/Copy';
 import { H1 } from '@/ui/components/Typography/Headings/Headings';
 import { Container } from '@components/helpers/Container';
-import { ServerCrash } from 'lucide-react';
+import { MdOutlineErrorOutline } from 'react-icons/md';
 import { useEffect } from 'react';
 
 const Error = ({
@@ -23,7 +23,7 @@ const Error = ({
       <div className="flex min-h-[75vh] items-center justify-center text-center">
         <div className="flex flex-col items-center">
           <H1>Error</H1>
-          <ServerCrash size={36} />
+          <MdOutlineErrorOutline />
           <Copy
             className="mt-20"
             size="large"

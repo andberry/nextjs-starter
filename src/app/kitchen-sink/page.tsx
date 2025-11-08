@@ -173,6 +173,23 @@ const Page = () => {
               variant="outline"
             />
           </div>
+          <div className="mt-8 flex gap-4">
+            <Button
+              label="Is Loading Primary Button"
+              variant="primary"
+              isLoading
+            />
+            <Button
+              label="Is Loading Black Button"
+              variant="black"
+              isLoading
+            />
+            <Button
+              label="Is Loading Outline Button"
+              variant="outline"
+              isLoading
+            />
+          </div>
         </Container>
       </section>
     </div>
